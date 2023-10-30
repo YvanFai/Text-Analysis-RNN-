@@ -1,0 +1,7 @@
+r'@[A-Za-zA-Z0-9]+' : Supprime tous les caractères '@' suivis d'une séquence de lettres ou de chiffres. Cela permet de supprimer les mentions d'utilisateurs.
+r'@[A-Za-z]+' : Supprime tous les caractères '@' suivis d'une séquence de lettres. Cela permet de supprimer les mentions d'utilisateurs, même si elles ne contiennent pas de chiffres.
+r'@[-)]+' : Supprime tous les caractères '@' suivis de tirets ou de parenthèses. Cela permet de supprimer les mentions d'utilisateurs qui sont suivies d'émoticônes.
+r'#' : Supprime tous les hashtags.
+r'RT[\s]+' : Supprime tous les retweets. Cela permet de supprimer le texte "RT" suivi d'un espace ou de plusieurs espaces.
+r'https?\/\/\S+' : Supprime tous les liens hypertextes.
+r'&[a-z;]+' : Supprime tous les caractères spéciaux qui commencent par un '&' et qui sont suivis de lettres ou de points-virgules. Cela permet de supprimer les références à des emojis et à d'autres caractères spéciaux.
